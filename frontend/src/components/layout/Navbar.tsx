@@ -61,14 +61,14 @@ const Navbar = () => {
             : 'bg-white/90 backdrop-blur-sm'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 flex items-center">
               <Link 
                 href="/" 
                 className="flex items-center space-x-2 transition-transform duration-300 hover:scale-105 group"
               >
-                <div className="w-10 h-10 bg-white rounded-full p-1 shadow-md group-hover:shadow-lg transition-shadow duration-300">
+                <div className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full p-1 shadow-md group-hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
                   <Image 
                     src="/assets/logo.png" 
                     alt="Digital Initiate Logo" 
@@ -77,7 +77,7 @@ const Navbar = () => {
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-                <span className={`text-xl font-bold tracking-tight ${
+                <span className={`hidden sm:block text-lg md:text-xl font-bold tracking-tight ${
                   theme === 'dark' ? 'text-white' : 'text-[#023153]'
                 }`}>
                   Digital<span className="text-[#EF5023]">Initiate</span>
@@ -86,13 +86,13 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-6">
+            <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
               {/* Navigation Links */}
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.path}
-                  className={`relative font-medium transition-all duration-300 group ${
+                  className={`relative font-medium transition-all duration-300 group text-sm lg:text-base ${
                     pathname === link.path 
                       ? 'text-[#EF5023]' 
                       : theme === 'dark'
@@ -117,20 +117,20 @@ const Navbar = () => {
                 }`}
                 aria-label="Toggle theme"
               >
-                {theme === 'dark' ? <FiSun className="h-5 w-5" /> : <FiMoon className="h-5 w-5" />}
+                {theme === 'dark' ? <FiSun className="h-4 w-4 lg:h-5 lg:w-5" /> : <FiMoon className="h-4 w-4 lg:h-5 lg:w-5" />}
               </button>
 
               {/* CTA Button */}
               <Link
                 href="/contact"
-                className="px-6 py-3 bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:from-[#d64420] hover:to-[#EF5023]"
+                className="px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:from-[#d64420] hover:to-[#EF5023] text-sm lg:text-base"
               >
                 Work with Us
               </Link>
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden flex items-center space-x-3">
+            <div className="md:hidden flex items-center space-x-2">
               {/* Mobile Theme Toggle */}
               <button
                 onClick={handleThemeToggle}
@@ -156,9 +156,9 @@ const Navbar = () => {
               >
                 <span className="sr-only">Open main menu</span>
                 {isMenuOpen ? (
-                  <FiX className="block h-7 w-7 transition-transform duration-300 rotate-90" />
+                  <FiX className="block h-6 w-6 md:h-7 md:w-7 transition-transform duration-300 rotate-90" />
                 ) : (
-                  <FiMenu className="block h-7 w-7 transition-transform duration-300" />
+                  <FiMenu className="block h-6 w-6 md:h-7 md:w-7 transition-transform duration-300" />
                 )}
               </button>
             </div>
@@ -180,28 +180,31 @@ const Navbar = () => {
 
         {/* Sidebar */}
         <div
-          className={`absolute top-0 right-0 w-72 h-full shadow-2xl transform transition-transform duration-300 ease-in-out ${
+          className={`absolute top-0 right-0 w-64 h-full shadow-2xl transform transition-transform duration-300 ease-in-out ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           } ${theme === 'dark' ? 'bg-[#1E293B]' : 'bg-white'}`}
         >
-          <div className="flex flex-col h-full pt-20 pb-6 px-6">
+          <div className="flex flex-col h-full pt-16 pb-6 px-4">
             {/* Logo in Mobile Menu */}
-            <div className={`flex items-center justify-center mb-8 pb-6 border-b ${
+            <div className={`flex items-center justify-center mb-6 pb-4 border-b ${
               theme === 'dark' ? 'border-gray-700' : 'border-gray-200'
             }`}>
-              <div className="w-16 h-16 bg-white rounded-full p-2 shadow-lg">
+              <div className="w-12 h-12 bg-white rounded-full p-1.5 shadow-lg">
                 <Image 
                   src="/assets/logo.png" 
                   alt="Digital Initiate Logo" 
-                  width={60} 
-                  height={60}
+                  width={48} 
+                  height={48}
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
+              <span className={`ml-3 text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-[#023153]'}`}>
+                Digital<span className="text-[#EF5023]">Initiate</span>
+              </span>
             </div>
 
             {/* Mobile Navigation Links */}
-            <nav className="flex-1 space-y-4">
+            <nav className="flex-1 space-y-2 py-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -224,7 +227,7 @@ const Navbar = () => {
             <Link
               href="/contact"
               onClick={toggleMenu}
-              className="block w-full px-6 py-4 bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white text-center font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105"
+              className="block w-full px-4 py-3 md:px-6 md:py-4 bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white text-center font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
               Work with Us
             </Link>

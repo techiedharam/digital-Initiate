@@ -65,18 +65,18 @@ const InternshipsShowcase = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 relative">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-[#EF5023]/10 rounded-full blur-3xl -z-10"></div>
+        <div className="text-center mb-12 md:mb-16 relative">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 md:w-32 md:h-32 bg-[#EF5023]/10 rounded-full blur-2xl -z-10"></div>
           <h2
-            className={`text-4xl md:text-6xl font-extrabold mb-6 relative ${
+            className={`text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 md:mb-6 relative ${
               theme === 'dark' ? 'text-white' : 'text-[#023153]'
             }`}
           >
             Internship Opportunities
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-[#EF5023] to-[#FF6B35] mx-auto mb-8 rounded-full"></div>
+          <div className="w-16 h-1 md:w-32 md:h-1 bg-gradient-to-r from-[#EF5023] to-[#FF6B35] mx-auto mb-4 md:mb-8 rounded-full"></div>
           <p
-            className={`text-lg md:text-2xl max-w-4xl mx-auto font-medium ${
+            className={`text-base md:text-lg lg:text-2xl max-w-4xl mx-auto font-medium ${
               theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
             }`}
           >
@@ -84,26 +84,26 @@ const InternshipsShowcase = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
           {internshipRoles.map((role, index) => (
             <div
               key={role.id}
-              className={`internship-card p-8 rounded-2xl shadow-xl text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 cursor-pointer group relative overflow-hidden ${
+              className={`internship-card p-6 md:p-8 rounded-2xl shadow-xl text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 cursor-pointer group relative overflow-hidden ${
                 theme === 'dark'
                   ? 'bg-gradient-to-br from-[#1E293B] to-[#0F172A] border border-gray-700'
                   : 'bg-gradient-to-br from-white to-gray-50 border border-gray-100'
               }`}
             >
               {/* Decorative elements */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#EF5023]/5 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-[#023153]/5 rounded-full translate-y-12 -translate-x-12 group-hover:scale-150 transition-transform duration-700"></div>
+              <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#EF5023]/5 rounded-full -translate-y-12 md:-translate-y-16 translate-x-12 md:translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
+              <div className="absolute bottom-0 left-0 w-16 h-16 md:w-24 md:h-24 bg-[#023153]/5 rounded-full translate-y-8 md:translate-y-12 -translate-x-8 md:-translate-x-12 group-hover:scale-150 transition-transform duration-700"></div>
               
               <div className="relative z-10">
-                <div className="text-6xl mb-6 internship-icon transform group-hover:scale-110 transition-transform duration-300">
+                <div className="text-4xl md:text-5xl mb-4 md:mb-6 internship-icon transform group-hover:scale-110 transition-transform duration-300">
                   {role.icon}
                 </div>
                 <h3
-                  className={`text-2xl font-bold mb-4 ${
+                  className={`text-xl md:text-2xl font-bold mb-3 md:mb-4 ${
                     theme === 'dark' ? 'text-white' : 'text-[#023153]'
                   }`}
                 >
@@ -113,7 +113,7 @@ const InternshipsShowcase = () => {
                   href="https://forms.gle/Wh1zznmfEJWZ3BL36"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`inline-block px-6 py-3 rounded-full text-base font-bold transition-all duration-300 transform group-hover:scale-105 ${
+                  className={`inline-block px-4 py-2 md:px-6 md:py-3 rounded-full text-sm md:text-base font-bold transition-all duration-300 transform group-hover:scale-105 ${
                     theme === 'dark'
                       ? 'bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white shadow-lg'
                       : 'bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white shadow-lg'
@@ -126,11 +126,11 @@ const InternshipsShowcase = () => {
           ))}
         </div>
 
-        <div className="text-center relative">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#023153]/5 rounded-full blur-3xl -z-10"></div>
+        <div className="text-center relative mt-12 md:mt-16">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-64 md:h-64 bg-[#023153]/5 rounded-full blur-3xl -z-10"></div>
           <Link
             href="/internships"
-            className={`inline-flex items-center px-10 py-5 rounded-2xl font-bold text-xl shadow-2xl transition-all duration-300 hover:shadow-2xl hover:scale-110 transform ${
+            className={`inline-flex items-center px-6 py-3 md:px-10 md:py-5 rounded-xl md:rounded-2xl font-bold text-base md:text-xl shadow-2xl transition-all duration-300 hover:shadow-2xl hover:scale-105 transform ${
               theme === 'dark'
                 ? 'bg-gradient-to-r from-[#FF6B35] to-[#EF5023] text-white'
                 : 'bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white'
@@ -138,7 +138,7 @@ const InternshipsShowcase = () => {
           >
             View All Internships
             <svg
-              className="ml-3 w-6 h-6 animate-pulse"
+              className="ml-2 md:ml-3 w-4 h-4 md:w-6 md:h-6 animate-pulse"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
