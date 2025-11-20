@@ -63,21 +63,21 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <div className="flex-shrink-0 flex items-center">
+            <div className="flex-shrink-0 flex items-center min-w-0">
               <Link 
                 href="/" 
-                className="flex items-center space-x-2 transition-transform duration-300 hover:scale-105 group"
+                className="flex items-center space-x-1.5 transition-transform duration-300 hover:scale-105 group"
               >
-                <div className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full p-1 shadow-md group-hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
+                <div className="w-7 h-7 md:w-8 md:h-8 bg-white rounded-full p-1 shadow-md group-hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
                   <Image 
                     src="/assets/logo.png" 
                     alt="Digital Initiate Logo" 
-                    width={40} 
-                    height={40}
+                    width={32} 
+                    height={32}
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-                <span className={`hidden sm:block text-lg md:text-xl font-bold tracking-tight ${
+                <span className={`text-base md:text-lg font-bold tracking-tight flex-shrink-0 ${
                   theme === 'dark' ? 'text-white' : 'text-[#023153]'
                 }`}>
                   Digital<span className="text-[#EF5023]">Initiate</span>
@@ -86,13 +86,13 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
+            <div className="hidden md:flex items-center space-x-3 lg:space-x-4">
               {/* Navigation Links */}
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.path}
-                  className={`relative font-medium transition-all duration-300 group text-sm lg:text-base ${
+                  className={`relative font-medium transition-all duration-300 group text-xs md:text-sm lg:text-base whitespace-nowrap flex-shrink-0 ${
                     pathname === link.path 
                       ? 'text-[#EF5023]' 
                       : theme === 'dark'
@@ -110,43 +110,43 @@ const Navbar = () => {
               {/* Theme Toggle */}
               <button
                 onClick={handleThemeToggle}
-                className={`p-2 rounded-lg transition-all duration-300 ${
+                className={`p-1.5 md:p-2 rounded-lg transition-all duration-300 flex-shrink-0 ${
                   theme === 'dark'
                     ? 'bg-gray-700 hover:bg-gray-600 text-yellow-400'
                     : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
                 }`}
                 aria-label="Toggle theme"
               >
-                {theme === 'dark' ? <FiSun className="h-4 w-4 lg:h-5 lg:w-5" /> : <FiMoon className="h-4 w-4 lg:h-5 lg:w-5" />}
+                {theme === 'dark' ? <FiSun className="h-4 w-4 md:h-5 md:w-5" /> : <FiMoon className="h-4 w-4 md:h-5 md:w-5" />}
               </button>
 
               {/* CTA Button */}
               <Link
                 href="/contact"
-                className="px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:from-[#d64420] hover:to-[#EF5023] text-sm lg:text-base"
+                className="px-3 py-1.5 md:px-4 md:py-2 lg:px-5 lg:py-2.5 bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:from-[#d64420] hover:to-[#EF5023] text-xs md:text-sm lg:text-base whitespace-nowrap flex-shrink-0"
               >
                 Work with Us
               </Link>
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden flex items-center space-x-2">
+            <div className="md:hidden flex items-center space-x-1">
               {/* Mobile Theme Toggle */}
               <button
                 onClick={handleThemeToggle}
-                className={`p-2 rounded-lg transition-all duration-300 ${
+                className={`p-1.5 rounded-lg transition-all duration-300 flex-shrink-0 ${
                   theme === 'dark'
                     ? 'bg-gray-700 text-yellow-400'
                     : 'bg-gray-100 text-gray-700'
                 }`}
                 aria-label="Toggle theme"
               >
-                {theme === 'dark' ? <FiSun className="h-5 w-5" /> : <FiMoon className="h-5 w-5" />}
+                {theme === 'dark' ? <FiSun className="h-4 w-4" /> : <FiMoon className="h-4 w-4" />}
               </button>
               
               <button
                 onClick={toggleMenu}
-                className={`p-2 rounded-md transition-all duration-300 ${
+                className={`p-1.5 rounded-md transition-all duration-300 flex-shrink-0 ${
                   theme === 'dark'
                     ? 'text-white hover:text-[#FF6B35] hover:bg-gray-700'
                     : 'text-[#023153] hover:text-[#EF5023] hover:bg-gray-100'
@@ -156,9 +156,9 @@ const Navbar = () => {
               >
                 <span className="sr-only">Open main menu</span>
                 {isMenuOpen ? (
-                  <FiX className="block h-6 w-6 md:h-7 md:w-7 transition-transform duration-300 rotate-90" />
+                  <FiX className="block h-5 w-5 transition-transform duration-300 rotate-90" />
                 ) : (
-                  <FiMenu className="block h-6 w-6 md:h-7 md:w-7 transition-transform duration-300" />
+                  <FiMenu className="block h-5 w-5 transition-transform duration-300" />
                 )}
               </button>
             </div>
@@ -184,12 +184,12 @@ const Navbar = () => {
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           } ${theme === 'dark' ? 'bg-[#1E293B]' : 'bg-white'}`}
         >
-          <div className="flex flex-col h-full pt-16 pb-6 px-4">
+          <div className="flex flex-col h-full pt-14 pb-6 px-4">
             {/* Logo in Mobile Menu */}
             <div className={`flex items-center justify-center mb-6 pb-4 border-b ${
               theme === 'dark' ? 'border-gray-700' : 'border-gray-200'
             }`}>
-              <div className="w-12 h-12 bg-white rounded-full p-1.5 shadow-lg">
+              <div className="w-12 h-12 bg-white rounded-full p-1.5 shadow-lg flex-shrink-0">
                 <Image 
                   src="/assets/logo.png" 
                   alt="Digital Initiate Logo" 
@@ -198,13 +198,13 @@ const Navbar = () => {
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
-              <span className={`ml-3 text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-[#023153]'}`}>
+              <span className={`ml-3 text-lg md:text-xl font-bold flex-shrink-0 ${theme === 'dark' ? 'text-white' : 'text-[#023153]'}`}>
                 Digital<span className="text-[#EF5023]">Initiate</span>
               </span>
             </div>
 
             {/* Mobile Navigation Links */}
-            <nav className="flex-1 space-y-2 py-4">
+            <nav className="flex-1 space-y-2 py-4 overflow-y-auto">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -227,7 +227,7 @@ const Navbar = () => {
             <Link
               href="/contact"
               onClick={toggleMenu}
-              className="block w-full px-4 py-3 md:px-6 md:py-4 bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white text-center font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105"
+              className="block w-full px-4 py-3 bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white text-center font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
               Work with Us
             </Link>
