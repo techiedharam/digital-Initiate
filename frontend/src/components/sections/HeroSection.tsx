@@ -5,7 +5,7 @@ import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Button from '@/src/components/ui/Button';
-import { FaRocket, FaChartLine, FaCode } from 'react-icons/fa';
+import { FaRocket, FaCode, FaGraduationCap } from 'react-icons/fa';
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -68,43 +68,43 @@ const HeroSection = () => {
           {/* Left Content */}
           <div ref={textRef} className="space-y-6">
             <div className="inline-block px-4 py-2 bg-[#EF5023]/20 rounded-full border border-[#EF5023]/30 backdrop-blur-sm">
-              <span className="text-[#EF5023] font-semibold">🚀 Welcome to Digital Initiate</span>
+              <span className="text-[#EF5023] font-semibold">🌟 Welcome to Digital Initiate</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Building Your
+              India's Leading
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#EF5023] to-[#ff8055]">
-                Digital Future
+                Internship & Development
               </span>
-              <span className="block">Simplified.</span>
+              <span className="block">Assistance Platform</span>
             </h1>
             
             <p className="text-xl text-gray-300 leading-relaxed max-w-xl">
-              Transform your business with cutting-edge software solutions and data-driven digital marketing strategies that deliver real results.
+              Gain Real Experience • Build Real Projects • Get Hired Faster
             </p>
 
             <div ref={buttonRef} className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="primary" size="lg" href="/services">
-                Explore Services
+              <Button variant="primary" size="lg" href="/internships">
+                Apply for Internship
               </Button>
-              <Button variant="outline" size="lg" href="/contact" className="border-white text-white hover:bg-white hover:text-[#023153]">
-                Get Started Free
+              <Button variant="outline" size="lg" href="/assistance" className="border-white text-white hover:bg-white hover:text-[#023153]">
+                Get Project Assistance
               </Button>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/10">
               <div>
-                <div className="text-3xl font-bold text-[#EF5023]">500+</div>
-                <div className="text-sm text-gray-400">Projects Done</div>
+                <div className="text-3xl font-bold text-[#EF5023]">1000+</div>
+                <div className="text-sm text-gray-400">Interns Trained</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#EF5023]">98%</div>
-                <div className="text-sm text-gray-400">Client Satisfaction</div>
+                <div className="text-3xl font-bold text-[#EF5023]">90%</div>
+                <div className="text-sm text-gray-400">Placement Rate</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-[#EF5023]">50+</div>
-                <div className="text-sm text-gray-400">Team Experts</div>
+                <div className="text-sm text-gray-400">Expert Mentors</div>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ const HeroSection = () => {
               </div>
               
               <div className="floating-icon absolute top-20 right-10 w-16 h-16 bg-gradient-to-br from-[#023153] to-[#011f35] rounded-2xl flex items-center justify-center shadow-2xl">
-                <FaChartLine className="text-2xl text-white" />
+                <FaGraduationCap className="text-2xl text-white" />
               </div>
               
               <div className="floating-icon absolute bottom-20 left-16 w-16 h-16 bg-gradient-to-br from-[#3DDC97] to-[#2bc787] rounded-2xl flex items-center justify-center shadow-2xl">
@@ -141,7 +141,7 @@ const HeroSection = () => {
                     />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Digital Excellence</h3>
-                  <p className="text-gray-300">Innovation Meets Results</p>
+                  <p className="text-gray-300">Intern • Build • Get Hired</p>
                 </div>
               </div>
 

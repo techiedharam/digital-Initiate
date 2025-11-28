@@ -96,50 +96,29 @@ const BlogPage = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "The Future of Web Development in 2025",
-      excerpt: "Explore the latest trends and technologies shaping the future of web development.",
-      date: "May 15, 2025",
+      title: "Building Scalable Web Applications with Modern Frameworks",
+      excerpt: "Learn how to architect and build scalable web applications using the latest technologies and best practices.",
+      date: "May 15, 2023",
+      author: "Jane Smith",
       category: "Web Development",
       readTime: "5 min read"
     },
     {
       id: 2,
-      title: "Maximizing ROI with Digital Marketing Strategies",
-      excerpt: "Learn how to optimize your digital marketing efforts for maximum return on investment.",
-      date: "April 28, 2025",
-      category: "Marketing",
+      title: "Mastering the MERN Stack: A Complete Guide",
+      excerpt: "A comprehensive guide to becoming proficient in MongoDB, Express.js, React, and Node.js development.",
+      date: "April 28, 2023",
+      author: "John Doe",
+      category: "Full Stack Development",
       readTime: "7 min read"
     },
     {
       id: 3,
-      title: "Building Scalable Mobile Applications",
-      excerpt: "Best practices for creating mobile apps that can grow with your business.",
-      date: "April 12, 2025",
-      category: "Mobile Development",
-      readTime: "6 min read"
-    },
-    {
-      id: 4,
-      title: "SEO Trends That Will Dominate 2025",
-      excerpt: "Stay ahead of the competition with these upcoming SEO trends.",
-      date: "March 30, 2025",
-      category: "SEO",
-      readTime: "4 min read"
-    },
-    {
-      id: 5,
-      title: "The Power of Data Science in Business",
-      excerpt: "How data science is transforming decision-making processes across industries.",
-      date: "March 18, 2025",
-      category: "Data Science",
-      readTime: "8 min read"
-    },
-    {
-      id: 6,
-      title: "Cybersecurity Best Practices for Modern Businesses",
-      excerpt: "Essential security measures every business should implement today.",
-      date: "March 5, 2025",
-      category: "Security",
+      title: "Career Paths in Technology: Choosing Your Specialization",
+      excerpt: "Exploring different technology career paths and how to choose the right specialization for your goals.",
+      date: "April 12, 2023",
+      author: "Alice Johnson",
+      category: "Career Guidance",
       readTime: "6 min read"
     }
   ];

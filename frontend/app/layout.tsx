@@ -18,8 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Digital Initiate | Software & Digital Marketing Solutions",
-  description: "Building Your Digital Future: Software & Marketing, Simplified.",
+  title: "Digital Initiate | Internship & Project Assistance Platform",
+  description: "India's Leading Internship & Development Assistance Platform. Gain real experience, build real projects, and get hired faster with our comprehensive internship programs and project assistance services.",
+  keywords: "internship, project assistance, web development, app development, software development, career guidance, mentorship, practical learning, job placement, ₹799 project help",
 };
 
 export default function RootLayout({

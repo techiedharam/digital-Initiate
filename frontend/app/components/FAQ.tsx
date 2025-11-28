@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { faqs } from '@/src/lib/constants';
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -45,33 +46,6 @@ const FAQ = () => {
     }
   }, []);
 
-  const faqs = [
-    {
-      question: "How long does it take to complete a project?",
-      answer: "Project timelines vary depending on complexity and scope. Simple websites can be completed in 2-4 weeks, while complex applications may take 3-6 months. We provide detailed timelines during our initial consultation."
-    },
-    {
-      question: "What technologies do you specialize in?",
-      answer: "We specialize in modern web technologies including React, Next.js, Node.js, and Python. For mobile development, we work with React Native and Flutter. Our marketing team excels in SEO, social media, and content marketing."
-    },
-    {
-      question: "Do you provide ongoing support after project completion?",
-      answer: "Yes, we offer comprehensive maintenance and support packages to ensure your project continues to run smoothly. Our support includes bug fixes, updates, and performance optimization."
-    },
-    {
-      question: "How do you ensure the security of our data?",
-      answer: "We follow industry best practices for data security, including encryption, secure authentication, regular security audits, and compliance with GDPR and other relevant regulations. Your data's safety is our top priority."
-    },
-    {
-      question: "Can you work with our existing team?",
-      answer: "Absolutely! We're experienced in integrating with existing development teams and can adapt to your workflows and processes. We provide regular updates and maintain clear communication throughout the project."
-    },
-    {
-      question: "What is your pricing model?",
-      answer: "Our pricing is transparent and depends on project scope, complexity, and timeline. We offer both fixed-price and time-and-materials models. We provide detailed quotes after understanding your requirements."
-    }
-  ];
-
   return (
     <section ref={faqRef} className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,7 +53,7 @@ const FAQ = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#023153] mb-4">Frequently Asked Questions</h2>
           <div className="w-20 h-1 bg-[#EF5023] mx-auto mb-6"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Find answers to common questions about our services and processes.
+            Find answers to common questions about our internship programs and project assistance services.
           </p>
         </div>
 

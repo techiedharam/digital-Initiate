@@ -3,7 +3,8 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { FaCode, FaMobileAlt, FaChartLine, FaEnvelope, FaSearch, FaDesktop } from 'react-icons/fa';
+import { FaCode, FaMobileAlt, FaDesktop, FaGraduationCap, FaHandsHelping } from 'react-icons/fa';
+import { projectAssistanceFeatures } from '@/src/lib/constants';
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -75,26 +76,16 @@ const ServicesPage = () => {
     }
   ];
 
-  const marketingServices = [
+  const internshipServices = [
     {
-      icon: <FaChartLine className="h-12 w-12 text-[#EF5023]" />,
-      title: "Social Media Marketing",
-      description: "Strategic social media campaigns to grow your brand presence and engagement."
+      icon: <FaGraduationCap className="h-12 w-12 text-[#EF5023]" />,
+      title: "Internship Programs",
+      description: "Hands-on experience in various technology domains with real projects and mentor guidance."
     },
     {
-      icon: <FaSearch className="h-12 w-12 text-[#EF5023]" />,
-      title: "SEO Optimization",
-      description: "Improve your search engine rankings and drive organic traffic to your website."
-    },
-    {
-      icon: <FaEnvelope className="h-12 w-12 text-[#EF5023]" />,
-      title: "Email Marketing",
-      description: "Effective email campaigns to nurture leads and retain customers."
-    },
-    {
-      icon: <FaChartLine className="h-12 w-12 text-[#EF5023]" />,
-      title: "Digital Marketing",
-      description: "Comprehensive digital marketing strategies to maximize your online visibility."
+      icon: <FaHandsHelping className="h-12 w-12 text-[#EF5023]" />,
+      title: "Career Guidance",
+      description: "Professional mentorship to help you navigate your career path and make informed decisions."
     }
   ];
 
@@ -106,7 +97,7 @@ const ServicesPage = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-[#023153] mb-6">Our Services</h1>
             <div className="w-24 h-1 bg-[#EF5023] mx-auto mb-8"></div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Comprehensive solutions to transform your digital presence and drive business growth
+              Comprehensive development solutions and internship programs designed to accelerate your career
             </p>
           </div>
 
@@ -133,15 +124,15 @@ const ServicesPage = () => {
             </div>
           </div>
 
-          {/* Marketing Services */}
-          <div>
+          {/* Internship Services */}
+          <div className="mb-20">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#023153] mb-2">Marketing Services</h2>
+              <h2 className="text-3xl font-bold text-[#023153] mb-2">Internship Services</h2>
               <div className="w-20 h-1 bg-[#EF5023] mx-auto"></div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {marketingServices.map((service, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {internshipServices.map((service, index) => (
                 <div 
                   key={index} 
                   className="service-card bg-white p-8 rounded-lg shadow-lg border-t-4 border-[#EF5023] transition-all duration-300"
@@ -153,6 +144,40 @@ const ServicesPage = () => {
                   <p className="text-gray-700">{service.description}</p>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* Project Assistance */}
+          <div>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-[#023153] mb-2">Project Assistance - ₹799</h2>
+              <div className="w-20 h-1 bg-[#EF5023] mx-auto"></div>
+              <p className="text-gray-700 mt-4 max-w-3xl mx-auto">
+                Complete support for your academic or professional projects with expert guidance until completion
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projectAssistanceFeatures.map((feature, index) => (
+                <div 
+                  key={index} 
+                  className="service-card bg-white p-8 rounded-lg shadow-lg border-t-4 border-[#EF5023] transition-all duration-300"
+                >
+                  <h3 className="text-xl font-bold text-[#023153] mb-3">{feature.title}</h3>
+                  <p className="text-gray-700">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+            
+            <div className="text-center mt-12">
+              <a 
+                href="https://forms.gle/Wh1zznmfEJWZ3BL36" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-[#EF5023] text-white font-semibold rounded-lg shadow-lg hover:bg-[#d64420] transition duration-300"
+              >
+                Get Assistance for ₹799
+              </a>
             </div>
           </div>
         </div>

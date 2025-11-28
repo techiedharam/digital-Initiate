@@ -109,7 +109,7 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Building Your Digital Future: Software & Marketing, Simplified.
+              India's Leading Internship & Development Assistance Platform. Gain Real Experience • Build Real Projects • Get Hired Faster.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social: SocialLink) => {
@@ -159,14 +159,12 @@ const Footer = () => {
             <h3 className={`text-lg font-semibold mb-6 ${
               theme === 'dark' ? 'text-[#FF6B35]' : 'text-[#EF5023]'
             }`}>Our Services</h3>
-            <ul className={`space-y-3 ${
-              theme === 'dark' ? 'text-gray-400' : 'text-gray-300'
-            }`}>
+            <ul className="space-y-3">
               <li className="footer-link transition-all duration-300 cursor-pointer">Web Development</li>
-              <li className="footer-link transition-all duration-300 cursor-pointer">Mobile Apps</li>
-              <li className="footer-link transition-all duration-300 cursor-pointer">Digital Marketing</li>
-              <li className="footer-link transition-all duration-300 cursor-pointer">SEO Optimization</li>
-              <li className="footer-link transition-all duration-300 cursor-pointer">Social Media</li>
+              <li className="footer-link transition-all duration-300 cursor-pointer">App Development</li>
+              <li className="footer-link transition-all duration-300 cursor-pointer">Custom Software</li>
+              <li className="footer-link transition-all duration-300 cursor-pointer">Internship Programs</li>
+              <li className="footer-link transition-all duration-300 cursor-pointer">Project Assistance</li>
             </ul>
           </div>
 
@@ -211,12 +209,19 @@ const Footer = () => {
               }`}>
                 Privacy Policy
               </Link>
+              <Link href="/refund" className={`text-sm transition-colors duration-300 ${
+                theme === 'dark' 
+                  ? 'text-gray-500 hover:text-[#FF6B35]' 
+                  : 'text-gray-400 hover:text-[#EF5023]'
+              }`}>
+                Refund Policy
+              </Link>
               <Link href="/terms" className={`text-sm transition-colors duration-300 ${
                 theme === 'dark' 
                   ? 'text-gray-500 hover:text-[#FF6B35]' 
                   : 'text-gray-400 hover:text-[#EF5023]'
               }`}>
-                Terms of Service
+                Terms & Conditions
               </Link>
             </div>
           </div>

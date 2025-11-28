@@ -5,7 +5,7 @@ import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useAppSelector } from '@/src/store/hooks';
-import { softwareServices, marketingServices } from '@/src/lib/constants';
+import { softwareServices, projectAssistanceFeatures } from '@/src/lib/constants';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,7 +74,7 @@ const ServicesShowcase = () => {
           <p
             className={`section-title text-base md:text-lg lg:text-2xl max-w-4xl mx-auto font-medium ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}
           >
-            Comprehensive digital solutions to transform your business and drive growth
+            Comprehensive development solutions and internship programs designed to accelerate your career
           </p>
         </div>
 
@@ -119,17 +119,17 @@ const ServicesShowcase = () => {
           </div>
         </div>
 
-        {/* Digital Marketing Services */}
+        {/* Project Assistance Section */}
         <div>
           <h3
             className={`text-xl md:text-2xl font-bold mb-6 md:mb-8 text-center ${theme === 'dark' ? 'text-[#FF6B35]' : 'text-[#EF5023]'}`}
           >
-            Digital Marketing
+            Project Assistance - ₹799
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            {marketingServices.map((service) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {projectAssistanceFeatures.slice(0, 6).map((feature) => (
               <div
-                key={service.id}
+                key={feature.id}
                 className={`service-card p-6 md:p-8 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${
                   theme === 'dark'
                     ? 'bg-gradient-to-br from-[#1E293B] to-[#0F172A] border border-gray-700'
@@ -137,26 +137,31 @@ const ServicesShowcase = () => {
                 }`}
               >
                 <div className="mb-4 md:mb-5">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg bg-[#EF5023]/10 flex items-center justify-center mb-4 md:mb-6">
-                    <div className="text-xl md:text-2xl text-[#EF5023]">📈</div>
-                  </div>
                   <h3
                     className={`text-lg md:text-xl font-bold mb-3 md:mb-4 ${
                       theme === 'dark' ? 'text-white' : 'text-[#023153]'
                     }`}
                   >
-                    {service.title}
+                    {feature.title}
                   </h3>
                   <p
                     className={`text-sm md:text-base leading-relaxed ${
                       theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
                     }`}
                   >
-                    {service.description}
+                    {feature.description}
                   </p>
                 </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              href="/assistance"
+              className={`inline-block px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold text-base md:text-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-r from-[#FF6B35] to-[#EF5023] text-white' : 'bg-gradient-to-r from-[#EF5023] to-[#FF6B35] text-white'}`}
+            >
+              Get Assistance for ₹799
+            </Link>
           </div>
         </div>
 

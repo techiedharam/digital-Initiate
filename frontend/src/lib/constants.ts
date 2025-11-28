@@ -28,26 +28,119 @@ export const softwareServices = [
   }
 ];
 
-export const marketingServices = [
+// Internship benefits
+export const internshipBenefits = [
   {
     id: 1,
-    title: "Social Media Marketing",
-    description: "Strategic social media campaigns to grow your brand presence and engagement."
+    icon: "⏱️",
+    title: "Real-time Development",
+    description: "Work on live projects with real clients and industry mentors"
   },
   {
     id: 2,
-    title: "SEO Optimization",
-    description: "Improve your search engine rankings and drive organic traffic to your website."
+    icon: "💬",
+    title: "Mentor Communication",
+    description: "Regular interaction with experienced professionals in your field"
   },
   {
     id: 3,
-    title: "Email Marketing",
-    description: "Effective email campaigns to nurture leads and retain customers."
+    icon: "📝",
+    title: "Resume Building",
+    description: "Professional resume creation and LinkedIn profile optimization"
   },
   {
     id: 4,
-    title: "Digital Marketing",
-    description: "Comprehensive digital marketing strategies to maximize your online visibility."
+    icon: "💼",
+    title: "Job Assistance",
+    description: "Placement support and connections with potential employers"
+  },
+  {
+    id: 5,
+    icon: "🎤",
+    title: "Interview Prep",
+    description: "Mock interviews and technical preparation sessions"
+  },
+  {
+    id: 6,
+    icon: "🧠",
+    title: "Soft Skills",
+    description: "Training in communication, teamwork, and professional skills"
+  },
+  {
+    id: 7,
+    icon: "📜",
+    title: "Certification",
+    description: "Official certificate and experience letter upon completion"
+  },
+  {
+    id: 8,
+    icon: "💼",
+    title: "Portfolio",
+    description: "Build a professional portfolio showcasing your work"
+  }
+];
+
+// Project assistance features
+export const projectAssistanceFeatures = [
+  {
+    id: 1,
+    title: "Complete Project Support",
+    description: "End-to-end guidance from concept to completion"
+  },
+  {
+    id: 2,
+    title: "1:1 Mentor Communication",
+    description: "Direct access to experienced mentors for personalized help"
+  },
+  {
+    id: 3,
+    title: "Coding Help & Debugging",
+    description: "Real-time assistance with code issues and debugging"
+  },
+  {
+    id: 4,
+    title: "Tool & Tech Guidance",
+    description: "Expert advice on choosing the right tools and technologies"
+  },
+  {
+    id: 5,
+    title: "Project Documentation",
+    description: "Help with creating proper documentation formats"
+  },
+  {
+    id: 6,
+    title: "Report Writing",
+    description: "Assistance with academic and professional reports"
+  },
+  {
+    id: 7,
+    title: "Review Calls",
+    description: "Regular check-ins to track progress and provide feedback"
+  },
+  {
+    id: 8,
+    title: "Resume Building",
+    description: "Professional resume creation for job applications"
+  },
+  {
+    id: 9,
+    title: "Job Assistance",
+    description: "Support with job searches and placement opportunities"
+  },
+  {
+    id: 10,
+    title: "Doubt Clearing",
+    description: "Unlimited Q&A sessions to resolve all your queries"
+  },
+  {
+    id: 11,
+    title: "Portfolio Guidance",
+    description: "Help building a professional portfolio of your work"
+  },
+  {
+    id: 12,
+    title: "Support Until Completion",
+    description: "Continuous assistance until your project is finished"
   }
 ];
 
@@ -71,6 +164,7 @@ export const navLinks = [
   { name: 'About', path: '/about' },
   { name: 'Services', path: '/services' },
   { name: 'Internships', path: '/internships' },
+  { name: 'Project Assistance', path: '/assistance' },
   { name: 'Blog', path: '/blog' },
   { name: 'Contact', path: '/contact' },
 ];
@@ -91,79 +185,79 @@ export const contactInfo = {
 export const features = [
   {
     id: 1,
-    title: "Fast Delivery",
-    description: "We deliver projects on time without compromising on quality. Our agile approach ensures rapid development and deployment."
+    title: "Hands-on Experience",
+    description: "Work on real projects with actual clients to gain practical skills that matter in the industry."
   },
   {
     id: 2,
-    title: "Innovative Solutions",
-    description: "Our team stays ahead of the curve with cutting-edge technologies and innovative approaches to problem-solving."
+    title: "Industry Mentorship",
+    description: "Get guidance from experienced professionals who are currently working in top tech companies."
   },
   {
     id: 3,
-    title: "Proven Results",
-    description: "We have a track record of delivering measurable results that help businesses grow and succeed in their markets."
+    title: "Placement Assistance",
+    description: "Comprehensive support including resume building, interview prep, and job referrals to partner companies."
   },
   {
     id: 4,
-    title: "24/7 Support",
-    description: "Our dedicated support team is available around the clock to assist you with any questions or issues."
+    title: "Affordable Project Help",
+    description: "Complete project assistance for just ₹799 with unlimited support until completion."
   }
 ];
 
 export const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    role: "CEO, TechStart Inc.",
-    content: "Digital Initiate transformed our online presence completely. Their team delivered beyond our expectations and helped us increase our customer base by 150% in just six months.",
-    avatar: "SJ"
+    name: "Priya Sharma",
+    role: "Computer Science Student",
+    content: "The internship program at Digital Initiate gave me real-world experience that my college curriculum couldn't provide. I worked on actual projects and got mentorship from industry experts. I secured a job offer even before completing my degree!",
+    avatar: "PS"
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "Marketing Director, GrowthCo",
-    content: "The digital marketing strategies implemented by Digital Initiate have significantly improved our conversion rates. Their attention to detail and innovative approach is impressive.",
-    avatar: "MC"
+    name: "Rahul Kumar",
+    role: "Final Year Engineering Student",
+    content: "The ₹799 Project Assistance program helped me complete my final year project with confidence. The mentor guided me through every step, from choosing the right technology stack to debugging complex issues. Highly recommended!",
+    avatar: "RK"
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
-    role: "Founder, StartupHub",
-    content: "Working with Digital Initiate was a game-changer for our business. Their software development expertise helped us create a product that our users love.",
-    avatar: "ER"
+    name: "Ananya Patel",
+    role: "MCA Graduate",
+    content: "As a fresher, I was struggling to find relevant experience. Digital Initiate's internship program not only gave me hands-on experience but also helped me build a strong portfolio. Their placement assistance led me to my dream job.",
+    avatar: "AP"
   }
 ];
 
 export const faqs = [
   {
     id: 1,
-    question: "How long does it take to complete a project?",
-    answer: "Project timelines vary depending on complexity and scope. Simple websites can be completed in 2-4 weeks, while complex applications may take 3-6 months. We provide detailed timelines during our initial consultation."
+    question: "How long do internships last?",
+    answer: "Our internship programs typically last 3-6 months, depending on the domain and intensity. We offer both part-time and full-time internship options to accommodate different schedules."
   },
   {
     id: 2,
-    question: "What technologies do you specialize in?",
-    answer: "We specialize in modern web technologies including React, Next.js, Node.js, and Python. For mobile development, we work with React Native and Flutter. Our marketing team excels in SEO, social media, and content marketing."
+    question: "What domains are available for internships?",
+    answer: "We offer internships in Web Development, Android App Development, Data Science, Java Programming, C++ Programming, Python Programming, Machine Learning, Artificial Intelligence, and Graphic Design."
   },
   {
     id: 3,
-    question: "Do you provide ongoing support after project completion?",
-    answer: "Yes, we offer comprehensive maintenance and support packages to ensure your project continues to run smoothly. Our support includes bug fixes, updates, and performance optimization."
+    question: "Do you provide placement assistance after internship completion?",
+    answer: "Yes, we offer comprehensive placement assistance including resume building, interview preparation, and job referrals to our partner companies. Our goal is to help you land your first tech job."
   },
   {
     id: 4,
-    question: "How do you ensure the security of our data?",
-    answer: "We follow industry best practices for data security, including encryption, secure authentication, regular security audits, and compliance with GDPR and other relevant regulations. Your data's safety is our top priority."
+    question: "What is included in the ₹799 Project Assistance program?",
+    answer: "Our Project Assistance program includes complete project support, 1:1 mentor communication, coding help & debugging, tool & tech guidance, project documentation, report writing assistance, review calls, resume building, job assistance, doubt clearing sessions, portfolio guidance, and support until project completion."
   },
   {
     id: 5,
-    question: "Can you work with our existing team?",
-    answer: "Absolutely! We're experienced in integrating with existing development teams and can adapt to your workflows and processes. We provide regular updates and maintain clear communication throughout the project."
+    question: "Can I interact with mentors during the internship?",
+    answer: "Absolutely! Our internship program includes regular one-on-one sessions with industry mentors, group discussions, and Q&A opportunities. Mentors are available to guide you through your learning journey and career decisions."
   },
   {
     id: 6,
-    question: "What is your pricing model?",
-    answer: "Our pricing is transparent and depends on project scope, complexity, and timeline. We offer both fixed-price and time-and-materials models. We provide detailed quotes after understanding your requirements."
+    question: "Is there a money-back guarantee?",
+    answer: "We offer a 7-day money-back guarantee for our Project Assistance program. If you're not satisfied with the support provided, you can request a full refund within this period."
   }
 ];

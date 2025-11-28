@@ -45,6 +45,7 @@ const Navbar = () => {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Internships', path: '/internships' },
+    { name: 'Project Assistance', path: '/assistance' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -68,16 +69,16 @@ const Navbar = () => {
                 href="/" 
                 className="flex items-center space-x-1.5 transition-transform duration-300 hover:scale-105 group"
               >
-                <div className="w-7 h-7 md:w-8 md:h-8 bg-white rounded-full p-1 shadow-md group-hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
+                <div className="w-9 h-9 md:w-10 md:h-10 bg-white rounded-full p-1.5 shadow-md group-hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
                   <Image 
                     src="/assets/logo.png" 
                     alt="Digital Initiate Logo" 
-                    width={32} 
-                    height={32}
+                    width={40} 
+                    height={40}
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-                <span className={`text-base md:text-lg font-bold tracking-tight flex-shrink-0 ${
+                <span className={`text-lg md:text-xl font-bold tracking-tight flex-shrink-0 ${
                   theme === 'dark' ? 'text-white' : 'text-[#023153]'
                 }`}>
                   Digital<span className="text-[#EF5023]">Initiate</span>
@@ -189,16 +190,16 @@ const Navbar = () => {
             <div className={`flex items-center justify-center mb-6 pb-4 border-b ${
               theme === 'dark' ? 'border-gray-700' : 'border-gray-200'
             }`}>
-              <div className="w-12 h-12 bg-white rounded-full p-1.5 shadow-lg flex-shrink-0">
+              <div className="w-14 h-14 bg-white rounded-full p-2 shadow-lg flex-shrink-0">
                 <Image 
                   src="/assets/logo.png" 
                   alt="Digital Initiate Logo" 
-                  width={48} 
-                  height={48}
+                  width={56} 
+                  height={56}
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
-              <span className={`ml-3 text-lg md:text-xl font-bold flex-shrink-0 ${theme === 'dark' ? 'text-white' : 'text-[#023153]'}`}>
+              <span className={`ml-3 text-xl md:text-2xl font-bold flex-shrink-0 ${theme === 'dark' ? 'text-white' : 'text-[#023153]'}`}>
                 Digital<span className="text-[#EF5023]">Initiate</span>
               </span>
             </div>

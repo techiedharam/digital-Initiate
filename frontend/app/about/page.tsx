@@ -62,20 +62,20 @@ const AboutPage = () => {
               <div>
                 <h2 className="text-3xl font-bold text-[#023153] mb-6">Our Mission</h2>
                 <p className="text-gray-700 mb-6 text-lg">
-                  At Digital Initiate, we believe that every business deserves a strong digital presence. 
-                  Our mission is to empower companies with cutting-edge technology solutions and data-driven 
-                  marketing strategies that drive real results.
+                  At Digital Initiate, we believe that everyone deserves access to quality technology education. 
+                  Our mission is to empower students with cutting-edge technical skills, mentorship, and real-world 
+                  experience that launches successful careers.
                 </p>
                 <p className="text-gray-700 mb-6 text-lg">
-                  Founded in 2020, we've helped over 200 businesses transform their digital landscape, 
-                  from startups to established enterprises.
+                  Founded in 2020, we've trained over 2000 students in various technology domains, 
+                  helping them secure positions in top tech companies.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <div className="bg-[#023153] text-white px-6 py-3 rounded-lg font-semibold">
-                    200+ Clients
+                    2000+ Students
                   </div>
                   <div className="bg-[#EF5023] text-white px-6 py-3 rounded-lg font-semibold">
-                    98% Satisfaction
+                    95% Placement Rate
                   </div>
                   <div className="bg-[#023153] text-white px-6 py-3 rounded-lg font-semibold">
                     5 Years Expertise
@@ -89,7 +89,7 @@ const AboutPage = () => {
                     <div className="text-center p-6">
                       <div className="text-6xl mb-4 text-[#EF5023]">🎯</div>
                       <h3 className="text-2xl font-bold text-white">Our Vision</h3>
-                      <p className="mt-2 text-gray-300">Innovative solutions for tomorrow's challenges</p>
+                      <p className="mt-2 text-gray-300">Empowering the next generation of tech professionals</p>
                     </div>
                   </div>
                   <div className="w-64 h-64 md:w-80 md:h-80 bg-[#EF5023] rounded-full opacity-20 absolute -bottom-6 -right-6"></div>
